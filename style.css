@@ -61,6 +61,7 @@ a {
   justify-content: center;
   align-items: center;
   font-weight: bold;
+  cursor: pointer;
 }
 
 /* Navber-End ,Hero-section-start */
