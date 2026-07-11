@@ -297,3 +297,237 @@ a {
 .p23 {
   color: #ffffff;
 }
+/* AI CHALLENGE */
+.dev-match-section {
+  padding: 72px 24px 96px;
+  background:
+    radial-gradient(circle at top left, rgba(30, 41, 59, 0.7), transparent 32%),
+    linear-gradient(135deg, #020617 0%, #0f172a 45%, #111827 100%);
+  color: #f8fafc;
+}
+
+.dev-match-shell {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dev-match-heading {
+  max-width: 680px;
+  margin-bottom: 24px;
+}
+
+.eyebrow {
+  display: inline-flex;
+  margin-bottom: 12px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(129, 140, 248, 0.35);
+  background: rgba(15, 23, 42, 0.8);
+  color: #c7d2fe;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+
+.dev-match-heading h2 {
+  margin-bottom: 12px;
+  font-size: clamp(2rem, 3vw, 2.8rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.dev-match-heading p {
+  color: #cbd5e1;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.dev-match-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 24px 0 32px;
+}
+
+.chip {
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.72);
+  color: #e2e8f0;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.chip:hover,
+.chip:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(16, 185, 129, 0.2);
+  border-color: rgba(16, 185, 129, 0.4);
+  color: #ffffff;
+  outline: none;
+}
+
+.chip.active {
+  background: linear-gradient(135deg, #10b981, #6366f1);
+  color: #ffffff;
+  box-shadow: 0 16px 35px rgba(99, 102, 241, 0.35);
+}
+
+.match-stage {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.match-card {
+  position: relative;
+  min-height: 280px;
+  overflow: hidden;
+  padding: 24px;
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  border-radius: 24px;
+  background: linear-gradient(145deg, rgba(15, 23, 42, 0.98), rgba(30, 41, 59, 0.92));
+  box-shadow: 0 25px 60px rgba(2, 6, 23, 0.35);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.match-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 1px;
+  border-radius: inherit;
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.55), rgba(99, 102, 241, 0.3), transparent 60%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.match-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 30px 75px rgba(16, 185, 129, 0.16);
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.brand-tag {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+}
+
+.brand-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #10b981, #818cf8);
+  box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.15);
+}
+
+.role-pill {
+  display: inline-flex;
+  padding: 7px 10px;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.8);
+  color: #bfdbfe;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.match-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.match-card p {
+  margin-bottom: 16px;
+  color: #cbd5e1;
+  line-height: 1.65;
+}
+
+.badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.badge {
+  padding: 7px 10px;
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.8);
+  color: #c7d2fe;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.apply-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 11px 14px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #10b981, #3b82f6);
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0 12px 30px rgba(59, 130, 246, 0.25);
+  transition: transform 0.2s ease;
+}
+
+.apply-btn:hover {
+  transform: translateY(-2px);
+}
+
+.mini-badge {
+  color: #86efac;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+@media (max-width: 960px) {
+  .match-stage {
+    grid-template-columns: 1fr;
+  }
+
+  .dev-match-heading {
+    max-width: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .dev-match-section {
+    padding: 56px 18px 72px;
+  }
+
+  .card-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .apply-btn {
+    width: 100%;
+  }
+}
+/* AI CHALLENGE END */
