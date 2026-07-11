@@ -171,7 +171,8 @@ a {
 
 .speaker-text-p-3 {
   color: #575757;
-  font-weight: lighter;
+  font-size: small;
+  font-weight: 25px;
   margin: 10px;
 }
 
